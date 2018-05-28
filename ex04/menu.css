@@ -1,0 +1,71 @@
+html, body
+{
+	padding: 0;
+	margin: 0;
+	background-image: url(https://i.stack.imgur.com/pMAiU.jpg);
+}
+
+.list-menu, .list-menu ul 
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.list-menu
+{
+	text-align: center;
+}
+
+/*
+	Placement Horizontal
+*/
+.list-menu li
+{
+	display: inline-block;
+}
+
+.list-menu ul li
+{
+	display: inherit;
+}
+
+.list-menu > li
+{
+	padding: 10px;
+	border-radius: 10px;
+	border: 3px solid black;
+	background-color: white;
+}
+
+.list-menu > li > ul > li > a
+{
+	color: white;
+	background-color: black;
+	border-bottom: 2px solid white;
+	padding-right: 35px;
+}
+
+.list-menu > li > a
+{
+	padding-right: 20px;
+	color: black;
+}
+
+.list-menu a {
+	text-decoration: none;
+	display: block;
+	padding: 5px;
+}
+
+.list-menu ul {
+	position: absolute;
+	left: -999em;
+	text-align: left;
+	z-index: 1000;
+}
+
+.list-menu li:hover ul {
+	left: auto;
+	margin-top: 10px;
+}

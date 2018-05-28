@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tableau periodique</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<style type="text/css">
+		html, body {
+			border: 0;
+			background-image: url(https://i.stack.imgur.com/pMAiU.jpg);
+			background-repeat: repeat;
+		}
+
+		table tr
+		{
+			border: 0px solid black;
+		}
+
+		table td
+		{
+			border: 1px solid black;
+			width: 5%;
+		}
+
+		.no-border
+		{
+			border: 0px solid black;
+		}
+
+		.atom
+		{
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			text-align: center;
+			vertical-align: middle;
+			font-weight: bolder;
+			font-size: 2.5vw;
+		}
+
+		.atom-weight, .atom-num
+		{
+			font-size: 1vw;
+			width: 100%;
+		}
+
+		.atom-weight
+		{
+			text-align: right;
+		}
+
+		.atom-num
+		{
+			text-align: left;
+		}
+
+		.gaz-noble
+		{
+			background-color: #00BFFF;
+		}
+
+		.non-metal
+		{
+			background-color: #00FF00;
+		}
+
+		.alcalin
+		{
+			background-color: #F78181;
+		}
+
+		.alcalino
+		{
+			background-color: #F4FA58;
+		}
+
+		.lanthanide
+		{
+			background-color: #FA58F4;
+		}
+
+		.actinide
+		{
+			background-color: #F781D8;
+		}
+
+		.metalt
+		{
+			background-color: #81BEF7;	
+		}
+
+		.metal-pauvre
+		{
+			background-color: #A4A4A4;
+		}
+
+		.metaloide
+		{
+			background-color: #B18904;
+		}
+
+		.halogene
+		{
+			background-color: #F7FE2E;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="width: 100%; text-align: center; font-size: 3vw;">Tableau de Mendeleïev!</h1>
+	<p style="width :100%; text-align: center; height: 30%;">
+		<img style="width: 30%; height: auto;" src="http://imgshare.free.fr/uploads/2b685f163f.png">
+	</p>
+	<table>
+		<tr>
+			<td class="non-metal">
+				<p class="atom-weight">1.0079</p>
+				<p class="atom">H</p>
+				<p class="atom-num">1</p>
+			</td>
+			<td class="no-border" colspan="16"></td>
+			<td class="gaz-noble">
+				<p class="atom-weight">4.002602</p>
+				<p class="atom">He</p>
+				<p class="atom-num">1</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="alcalin">
+				<p class="atom-weight">6.9395</p>
+				<p class="atom">Li</p>
+				<p class="atom-num">3</p>
+			</td>
+			<td class="alcalino">
+				<p class="atom-weight">9.0121831</p>
+				<p class="atom">Be</p>
+				<p class="atom-num">4</p>
+			</td>
+			<td class="no-border" colspan="10"></td>
+			<td class="metaloide">
+				<p class="atom-weight">10.8135</p>
+				<p class="atom">B</p>
+				<p class="atom-num">5</p>
+			</td>
+			<td class="non-metal">
+				<p class="atom-weight">12.0106</p>
+				<p class="atom">C</p>
+				<p class="atom-num">6</p>
+			</td>
+			<td class="non-metal">
+				<p class="atom-weight">14.006855</p>
+				<p class="atom">N</p>
+				<p class="atom-num">7</p>
+			</td>
+			<td class="non-metal">
+				<p class="atom-weight">15.99940</p>
+				<p class="atom">O</p>
+				<p class="atom-num">8</p>
+			</td>
+			<td class="halogene">
+				<p class="atom-weight">18.99840316</p>
+				<p class="atom">F</p>
+				<p class="atom-num">9</p>
+			</td>
+			<td class="gaz-noble">
+				<p class="atom-weight">20.1797</p>
+				<p class="atom">Ne</p>
+				<p class="atom-num">10</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="alcalin">
+				<p class="atom-weight">22.98976928</p>
+				<p class="atom">Na</p>
+				<p class="atom-num">11</p>
+			</td>
+			<td class="alcalino">
+				<p class="atom-weight">24.3055</p>
+				<p class="atom">Mg</p>
+				<p class="atom-num">12</p>
+			</td>
+			<td class="no-border" colspan="10"></td>
+			<td class="metal-pauvre">
+				<p class="atom-weight">26.9815385</p>
+				<p class="atom">Al</p>
+				<p class="atom-num">13</p>
+			</td>
+			<td class="metaloide">
+				<p class="atom-weight">28.085</p>
+				<p class="atom">Si</p>
+				<p class="atom-num">14</p>
+			</td>
+			<td class="non-metal">
+				<p class="atom-weight">30.97376200</p>
+				<p class="atom">P</p>
+				<p class="atom-num">15</p>
+			</td>
+			<td class="non-metal">
+				<p class="atom-weight">32.0675</p>
+				<p class="atom">S</p>
+				<p class="atom-num">16</p>
+			</td>
+			<td class="halogene">
+				<p class="atom-weight">35.4515</p>
+				<p class="atom">Cl</p>
+				<p class="atom-num">17</p>
+			</td>
+			<td class="gaz-noble">
+				<p class="atom-weight">39.948</p>
+				<p class="atom">Ar</p>
+				<p class="atom-num">18</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="alcalin">
+				<p class="atom-weight">39.0983</p>
+				<p class="atom">K</p>
+				<p class="atom-num">19</p>
+			</td>
+			<td class="alcalino">
+				<p class="atom-weight">40.078</p>
+				<p class="atom">Ca</p>
+				<p class="atom-num">20</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">44.955908</p>
+				<p class="atom">Sc</p>
+				<p class="atom-num">21</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">47.867</p>
+				<p class="atom">Ti</p>
+				<p class="atom-num">22</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">50.9415</p>
+				<p class="atom">V</p>
+				<p class="atom-num">23</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">51.9961</p>
+				<p class="atom">Cr</p>
+				<p class="atom-num">24</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">54.938044</p>
+				<p class="atom">Mn</p>
+				<p class="atom-num">25</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">55.845</p>
+				<p class="atom">Fe</p>
+				<p class="atom-num">26</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">58.933194</p>
+				<p class="atom">Co</p>
+				<p class="atom-num">27</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">58.6934</p>
+				<p class="atom">Ni</p>
+				<p class="atom-num">28</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">63.546</p>
+				<p class="atom">Cu</p>
+				<p class="atom-num">29</p>
+			</td>
+			<td class="metal-pauvre">
+				<p class="atom-weight">65.38</p>
+				<p class="atom">Zn</p>
+				<p class="atom-num">30</p>
+			</td>
+			<td class="metal-pauvre">
+				<p class="atom-weight">69.723</p>
+				<p class="atom">Ga</p>
+				<p class="atom-num">31</p>
+			</td>
+			<td class="metaloide">
+				<p class="atom-weight">72.630</p>
+				<p class="atom">Ge</p>
+				<p class="atom-num">32</p>
+			</td>
+			<td class="metaloide">
+				<p class="atom-weight">74.921595</p>
+				<p class="atom">As</p>
+				<p class="atom-num">33</p>
+			</td>
+			<td class="non-metal">
+				<p class="atom-weight">78.971</p>
+				<p class="atom">Se</p>
+				<p class="atom-num">34</p>
+			</td>
+			<td class="halogene">
+				<p class="atom-weight">79.904</p>
+				<p class="atom">Br</p>
+				<p class="atom-num">35</p>
+			</td>
+			<td class="gaz-noble">
+				<p class="atom-weight">83.798</p>
+				<p class="atom">Kr</p>
+				<p class="atom-num">36</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="alcalin">
+				<p class="atom-weight">85.4678</p>
+				<p class="atom">Rb</p>
+				<p class="atom-num">37</p>
+			</td>
+			<td class="alcalino">
+				<p class="atom-weight">87.62</p>
+				<p class="atom">Sr</p>
+				<p class="atom-num">38</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">88.90584</p>
+				<p class="atom">Y</p>
+				<p class="atom-num">39</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">91.224</p>
+				<p class="atom">Zr</p>
+				<p class="atom-num">40</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">92.90637</p>
+				<p class="atom">Nb</p>
+				<p class="atom-num">41</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">95.95</p>
+				<p class="atom">Mo</p>
+				<p class="atom-num">42</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">98</p>
+				<p class="atom">Tc</p>
+				<p class="atom-num">43</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">101.07</p>
+				<p class="atom">Ru</p>
+				<p class="atom-num">44</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">102.90550</p>
+				<p class="atom">Rh</p>
+				<p class="atom-num">45</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">106.42</p>
+				<p class="atom">Pd</p>
+				<p class="atom-num">46</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">107.8682</p>
+				<p class="atom">Ag</p>
+				<p class="atom-num">47</p>
+			</td>
+			<td class="metal-pauvre">
+				<p class="atom-weight">112.414</p>
+				<p class="atom">Cd</p>
+				<p class="atom-num">48</p>
+			</td>
+			<td class="metal-pauvre">
+				<p class="atom-weight">114.818</p>
+				<p class="atom">In</p>
+				<p class="atom-num">49</p>
+			</td>
+			<td class="metal-pauvre">
+				<p class="atom-weight">118.710</p>
+				<p class="atom">Sn</p>
+				<p class="atom-num">50</p>
+			</td>
+			<td class="metaloide">
+				<p class="atom-weight">121.760</p>
+				<p class="atom">Sb</p>
+				<p class="atom-num">51</p>
+			</td>
+			<td class="metaloide">
+				<p class="atom-weight">127.60</p>
+				<p class="atom">Te</p>
+				<p class="atom-num">52</p>
+			</td>
+			<td class="halogene">
+				<p class="atom-weight">126.90447</p>
+				<p class="atom">I</p>
+				<p class="atom-num">53</p>
+			</td>
+			<td class="gaz-noble">
+				<p class="atom-weight">131.293</p>
+				<p class="atom">Xe</p>
+				<p class="atom-num">54</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="alcalin">
+				<p class="atom-weight">132.905452</p>
+				<p class="atom">Cs</p>
+				<p class="atom-num">55</p>
+			</td>
+			<td class="alcalino">
+				<p class="atom-weight">137.327</p>
+				<p class="atom">Ba</p>
+				<p class="atom-num">56</p>
+			</td>
+			<td class="no-border"></td>
+			<td class="metalt">
+				<p class="atom-weight">178.49</p>
+				<p class="atom">Hf</p>
+				<p class="atom-num">72</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">180.94788</p>
+				<p class="atom">Ta</p>
+				<p class="atom-num">73</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">183.84</p>
+				<p class="atom">W</p>
+				<p class="atom-num">74</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">186.207</p>
+				<p class="atom">Re</p>
+				<p class="atom-num">75</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">190.23</p>
+				<p class="atom">Os</p>
+				<p class="atom-num">76</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">192.217</p>
+				<p class="atom">Ir</p>
+				<p class="atom-num">77</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">195.084</p>
+				<p class="atom">Pt</p>
+				<p class="atom-num">78</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">196.966569</p>
+				<p class="atom">Au</p>
+				<p class="atom-num">79</p>
+			</td>
+			<td class="metal-pauvre">
+				<p class="atom-weight">200.592</p>
+				<p class="atom">Hg</p>
+				<p class="atom-num">80</p>
+			</td>
+			<td class="metal-pauvre">
+				<p class="atom-weight">204.3835</p>
+				<p class="atom">Tl</p>
+				<p class="atom-num">81</p>
+			</td>
+			<td class="metal-pauvre">
+				<p class="atom-weight">207.2</p>
+				<p class="atom">Pb</p>
+				<p class="atom-num">82</p>
+			</td>
+			<td class="metal-pauvre">
+				<p class="atom-weight">208.98040</p>
+				<p class="atom">Bi</p>
+				<p class="atom-num">83</p>
+			</td>
+			<td class="metal-pauvre">
+				<p class="atom-weight">209</p>
+				<p class="atom">Po</p>
+				<p class="atom-num">84</p>
+			</td>
+			<td class="metaloide">
+				<p class="atom-weight">210</p>
+				<p class="atom">At</p>
+				<p class="atom-num">210</p>
+			</td>
+			<td class="gaz-noble">
+				<p class="atom-weight">222</p>
+				<p class="atom">Rn</p>
+				<p class="atom-num">86</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="alcalin">
+				<p class="atom-weight">223</p>
+				<p class="atom">Fr</p>
+				<p class="atom-num">87</p>
+			</td>
+			<td class="alcalino">
+				<p class="atom-weight">223</p>
+				<p class="atom">Ra</p>
+				<p class="atom-num">88</p>
+			</td>
+			<td class="no-border"></td>
+			<td class="metalt">
+				<p class="atom-weight">267</p>
+				<p class="atom">Rf</p>
+				<p class="atom-num">104</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">268</p>
+				<p class="atom">Db</p>
+				<p class="atom-num">105</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">269</p>
+				<p class="atom">Sg</p>
+				<p class="atom-num">106</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">270</p>
+				<p class="atom">Bh</p>
+				<p class="atom-num">107</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">277</p>
+				<p class="atom">Hs</p>
+				<p class="atom-num">108</p>
+			</td>
+			<td>
+				<p class="atom-weight">278</p>
+				<p class="atom">Mt</p>
+				<p class="atom-num">109</p>
+			</td>
+			<td>
+				<p class="atom-weight">281</p>
+				<p class="atom">Ds</p>
+				<p class="atom-num">110</p>
+			</td>
+			<td>
+				<p class="atom-weight">282</p>
+				<p class="atom">Rg</p>
+				<p class="atom-num">111</p>
+			</td>
+			<td class="metalt">
+				<p class="atom-weight">285</p>
+				<p class="atom">Cn</p>
+				<p class="atom-num">112</p>
+			</td>
+			<td>
+				<p class="atom-weight">286</p>
+				<p class="atom">Nh</p>
+				<p class="atom-num">113</p>
+			</td>
+			<td>
+				<p class="atom-weight">289</p>
+				<p class="atom">Fi</p>
+				<p class="atom-num">114</p>
+			</td>
+			<td>
+				<p class="atom-weight">289</p>
+				<p class="atom">Mc</p>
+				<p class="atom-num">115</p>
+			</td>
+			<td>
+				<p class="atom-weight">293</p>
+				<p class="atom">Lv</p>
+				<p class="atom-num">116</p>
+			</td>
+			<td>
+				<p class="atom-weight">294</p>
+				<p class="atom">Ts</p>
+				<p class="atom-num">117</p>
+			</td>
+			<td>
+				<p class="atom-weight">294</p>
+				<p class="atom">Og</p>
+				<p class="atom-num">118</p>
+			</td>
+		</tr>
+		<tr style="height: 3vh;"></tr>
+		<tr>
+			<td class="no-border" colspan="3"></td>
+			<td class="lanthanide">
+				<p class="atom-weight">138.90547</p>
+				<p class="atom">La</p>
+				<p class="atom-num">57</p>
+			</td>
+			<td class="lanthanide">
+				<p class="atom-weight">140.116</p>
+				<p class="atom">Ce</p>
+				<p class="atom-num">58</p>
+			</td>
+			<td class="lanthanide">
+				<p class="atom-weight">14.90766</p>
+				<p class="atom">Pr</p>
+				<p class="atom-num">59</p>
+			</td>
+			<td class="lanthanide">
+				<p class="atom-weight">144.242</p>
+				<p class="atom">Nd</p>
+				<p class="atom-num">60</p>
+			</td>
+			<td class="lanthanide">
+				<p class="atom-weight">145</p>
+				<p class="atom">Pm</p>
+				<p class="atom-num">61</p>
+			</td>
+			<td class="lanthanide">
+				<p class="atom-weight">150.36</p>
+				<p class="atom">Sm</p>
+				<p class="atom-num">62</p>
+			</td>
+			<td class="lanthanide">
+				<p class="atom-weight">151.964</p>
+				<p class="atom">Eu</p>
+				<p class="atom-num">63</p>
+			</td>
+			<td class="lanthanide">
+				<p class="atom-weight">157.25</p>
+				<p class="atom">Gd</p>
+				<p class="atom-num">64</p>
+			</td>
+			<td class="lanthanide">
+				<p class="atom-weight">158.92535</p>
+				<p class="atom">Tb</p>
+				<p class="atom-num">65</p>
+			</td>
+			<td class="lanthanide">
+				<p class="atom-weight">162.5</p>
+				<p class="atom">Dy</p>
+				<p class="atom-num">66</p>
+			</td>
+			<td class="lanthanide">
+				<p class="atom-weight">164.93033</p>
+				<p class="atom">Ho</p>
+				<p class="atom-num">67</p>
+			</td>
+			<td class="lanthanide">
+				<p class="atom-weight">167.259</p>
+				<p class="atom">Er</p>
+				<p class="atom-num">68</p>
+			</td>
+			<td class="lanthanide">
+				<p class="atom-weight">168.93422</p>
+				<p class="atom">Tm</p>
+				<p class="atom-num">69</p>
+			</td>
+			<td class="lanthanide">
+				<p class="atom-weight">173.045</p>
+				<p class="atom">Yb</p>
+				<p class="atom-num">70</p>
+			</td>
+			<td class="lanthanide">
+				<p class="atom-weight">174.9668</p>
+				<p class="atom">Lu</p>
+				<p class="atom-num">Lr</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="no-border" colspan="3"></td>
+			<td class="actinide">
+				<p class="atom-weight">227</p>
+				<p class="atom">Ac</p>
+				<p class="atom-num">89</p>
+			</td>
+			<td class="actinide">
+				<p class="atom-weight">232.0377</p>
+				<p class="atom">Th</p>
+				<p class="atom-num">90</p>
+			</td>
+			<td class="actinide">
+				<p class="atom-weight">231.03588</p>
+				<p class="atom">Pa</p>
+				<p class="atom-num">91</p>
+			</td>
+			<td class="actinide">
+				<p class="atom-weight">238.02891</p>
+				<p class="atom">U</p>
+				<p class="atom-num">92</p>
+			</td>
+			<td class="actinide">
+				<p class="atom-weight">237</p>
+				<p class="atom">Np</p>
+				<p class="atom-num">93</p>
+			</td>
+			<td class="actinide">
+				<p class="atom-weight">244</p>
+				<p class="atom">Pu</p>
+				<p class="atom-num">94</p>
+			</td>
+			<td class="actinide">
+				<p class="atom-weight">243</p>
+				<p class="atom">Am</p>
+				<p class="atom-num">95</p>
+			</td>
+			<td class="actinide">
+				<p class="atom-weight">247</p>
+				<p class="atom">Cm</p>
+				<p class="atom-num">96</p>
+			</td>
+			<td class="actinide">
+				<p class="atom-weight">247</p>
+				<p class="atom">Bk</p>
+				<p class="atom-num">97</p>
+			</td>
+			<td class="actinide">
+				<p class="atom-weight">251</p>
+				<p class="atom">Cf</p>
+				<p class="atom-num">98</p>
+			</td>
+			<td class="actinide">
+				<p class="atom-weight">252</p>
+				<p class="atom">Es</p>
+				<p class="atom-num">99</p>
+			</td>
+			<td class="actinide">
+				<p class="atom-weight">257</p>
+				<p class="atom">Fm</p>
+				<p class="atom-num">100</p>
+			</td>
+			<td class="actinide">
+				<p class="atom-weight">258</p>
+				<p class="atom">Md</p>
+				<p class="atom-num">101</p>
+			</td>
+			<td class="actinide">
+				<p class="atom-weight">259</p>
+				<p class="atom">No</p>
+				<p class="atom-num">102</p>
+			</td>
+			<td class="actinide">
+				<p class="atom-weight">266</p>
+				<p class="atom">Lr</p>
+				<p class="atom-num">103</p>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

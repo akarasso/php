@@ -1,0 +1,110 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+	background-color: #585858;
+}
+header
+{
+	margin: auto;
+	margin-top: 20px;
+	width: 1300px;
+}
+
+input[type=submit]
+{
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  font-size: 0.7em;
+}
+
+.box
+{
+	background-color: #909090;
+	box-shadow: 10px 10px 10px black;
+	border-radius: 10px;
+}
+
+.box-red
+{
+	text-shadow: 6px 5px 6px red;
+}
+
+.container
+{
+	margin: auto;
+	margin-top: 20px;
+	width: 1300px;
+}
+
+.left, .right
+{
+	float: left;
+	height: 450px;
+	margin-left: 2%;
+	width: 11%;
+}
+
+.center
+{
+	float: left;
+	margin-left: 3%;
+	width: 68%;
+	height: 600px;
+}
+
+.right
+{
+	margin-right: 2%;
+	float: right;
+}
+
+.menu
+{
+	text-align: center;
+}
+
+.menu a img
+{
+	margin-bottom: 6%;
+	width: 64px;
+}
+
+.loupe, .logo, .close, .reload
+{
+	position: relative;
+}
+
+.logo
+{
+	bottom: 12px;
+	height: 120px;
+}
+
+.loupe
+{
+	left: 520px;
+	bottom: -25px;
+}
+
+.reload, .close
+{
+	width: 32px;
+	height: 32px;
+}
+
+.reload
+{
+	left: 535px;
+	top: -110px;
+}
+
+.close
+{
+	left: 500px;
+	top: 0px;
+}
